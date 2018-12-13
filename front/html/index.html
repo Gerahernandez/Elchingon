@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BaraBro's</title>
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+
+</head>
+<body>
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.2';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.2';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+	<div id="sidebar">
+      <div class="toggle-btn">
+        <span>&#9776</span>
+
+      </div>
+      <ul>
+       
+        <li><a href="http://localhost/DW2018/Front/ProyectoFINALFINAL/front/html/index.html" style="text-decoration: none; text-decoration-style: none; background-color: black; color: white;">Inicio</a></li>
+        <li><a href="http://localhost/DW2018/Front/ProyectoFINALFINAL/front/html/Empedar.html" style="text-decoration: none; text-decoration-style: none; background-color: black; color: white;"> Lugares para empedar</a></style> </li>
+        <li><a href="http://localhost/DW2018/Front/ProyectoFINALFINAL/front/html/index.html" style="text-decoration: none; text-decoration-style: none; background-color: black; color: white;">Lugares para bajonear</a></li>
+      </ul>
+    </div>
+
+
+	<header>
+		<div id="wall">
+			<div id="circle">
+			
+			</div>
+		</div>
+
+	</header>
+
+	<div id="content">
+	
+		<p id="barabros">BaraBro's</p>
+		<p id="barabros">Peda Segura!!</p>
+		<div id="cont-izq">
+			
+
+
+				<div id="Targetone">
+					
+					<div id="img-est"></div>
+					<div id="imgluz"><!-- <img src="../img/luz.png"> -->
+					</div>
+					<div id="imgluz1"></div>
+					<div id="imgluz3"></div>
+					<div id="imgluz4"></div>
+					<div id="imgluz5"></div>
+
+					<div id="estname"><h4 class="estnametext">Bola 9 Billar</h4></div>
+					<div id="estdesc"><p class="estdecstext">El billar "BOLA 9" es sin duda el claro ejemplo de lo que es <br> agarrar el pedo como estudiante, <br> desde que llegas se siente el ambiente universitario <br> y te das cuenta que es un buen lugar para agarrar desmadre, <br> pues si alguna vez haz ido ahi, <br> por ley te vas a encontrar a algun companero de la UAQ, <br> sus promociones estan siempre al ajuste del bolcillo del estudiambre <br> y a la banda siempre le va a alcanzar para una buena promo <br>dependiendo del dia en que vayas, <br> que claro los Juebebes es cuando esta madre se convientre en un antro, <br>lleno hasta el tope y con puro borracho en sus mesas.</p></div>
+					<hr class="hrizq">
+
+					<hr class="barrita">
+
+
+
+					<div class="fb-like" data-href="https://www.facebook.com/BillarBola9/" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+
+					
+
+
+					<div>
+						<a href="https://www.google.com/maps/place/Hidalgo+220,+Centro,+76000+Santiago+de+Quer%C3%A9taro,+Qro./@20.5909827,-100.4064008,17z/data=!3m1!4b1!4m5!3m4!1s0x85d35ad2f45ec77b:0x55646cd78323de07!8m2!3d20.5909777!4d-100.4042121">
+				    <div id="imgubi"></div>
+				    	</a>
+				    <button id="request">VER MAS INFORMACION</button>
+				    <div id="bio"></div>
+					</div>
+
+
+					<script>
+						var btn = document.getElementById('request');
+						var bio = document.getElementById('bio');
+						 
+						var request = new XMLHttpRequest();
+						 
+						request.onreadystatechange = function() {
+						  if(request.readyState === 4) {
+						    bio.style.border = '1px solid #e8e8e8';
+						    if(request.status === 200) { 
+						      bio.innerHTML = request.responseText;
+						    } else {
+						      bio.innerHTML = 'An error occurred during your request: ' +  request.status + ' ' + request.statusText;
+						    } 
+						  }
+						}
+						 
+						request.open('Get', 'Bio.txt');
+						 
+						btn.addEventListener('click', function() {
+						  this.style.display = 'none';
+						  request.send();
+						});
+					</script>
+
+
+
+
+
+		</div>
+
+
+
+	
+		<p id="what">Que chinagdos es esto ?</p>
+
+		<footer>
+			<p>All rights reserved. ®</p>
+
+		</footer>
+	</div>
+
+<script src="../js/sidebar.js"></script>
+</body>
+</html>

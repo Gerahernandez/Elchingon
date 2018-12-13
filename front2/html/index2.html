@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BaraBro's</title>
+	<link rel="stylesheet" type="text/css" href="../css/index2.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+
+</head>
+<body>
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.2';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.2';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+	<div id="sidebar">
+      <div class="toggle-btn">
+        <span>&#9776</span>
+
+      </div>
+      <ul>
+       
+        <li><a href="http://localhost/DW2018/Front/ProyectoFINALFINAL/front/html/index.html" style="text-decoration: none; text-decoration-style: none; background-color: black; color: white;">Inicio</a></li>
+        <li><a href="http://localhost/DW2018/Front/ProyectoFINALFINAL/front/html/Empedar.html" style="text-decoration: none; text-decoration-style: none; background-color: black; color: white;"> Lugares para empedar</a></li>
+        <li><a href="http://localhost/DW2018/Front/ProyectoFINALFINAL/front/html/index.html" style="text-decoration: none; text-decoration-style: none; background-color: black; color: white;">Lugares para bajonear</a></li>
+      </ul>
+    </div>
+
+
+	<header>
+		<div id="wall">
+			<div id="circle">
+			
+			</div>
+		</div>
+
+	</header>
+
+	<div id="content">
+	
+		<p id="barabros">BaraBro's</p>
+		<p id="barabros">Para Bajonear!!</p>
+		<div id="cont-izq">
+			
+
+
+				<div id="Targetone">
+
+					<div class="laficha">
+						<video src="../img/Laficha.mp4" autoplay muted loop  width="300" height="330" ></video>
+					</div>
+					<div id="imgluz"><!-- <img src="../img/luz.png"> -->
+					</div>
+					<div id="imgluz1"></div>
+					<div id="imgluz3"></div>
+					<div id="imgluz4"></div>
+					<div id="imgluz5"></div>
+					
+
+					<div id="estname"><h4 class="estnametext">La Ficha Wings</h4></div>
+					<div id="estdesc"><p class="estdecstext">Este peculiar establecimiento tal vez poco conocido <br> es un buen lugar para cuando hay un poco mas de cache <br> y tienes para ir por unas chelitas y ademas comer chido <br> ya que, aunque no es muy famoso este lugar<br> cuenta con buffet de alitas todos los dias <br> la chela esta buen precio todavia, <br> esta bien para cuando quieras quedar bien con una chica<br> pero tampoco quedar desfalcado.<br> Sus salsas son las clasicas de cualquier establecimiento de alitas <br> y lo mejor es que tiene su zona para fumar <br> por si te gusta estar echando humo y cheleando <br> el consumo de alimentos no es obligatorio para consumir chelas <br> y despues de un taco un buen tabaco, <br>puedes pedir algunas rolitas que te plascan <br>ya que los encargados no se fresean</p></div>
+					<hr class="hrizq">
+
+					<hr class="barrita">
+
+
+
+					<div class="fb-like" data-href="https://www.facebook.com/lafichawings/" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+
+
+					<div class="fb-comments" data-href="https://www.facebook.com/pg/lafichatecnologico/about/?ref=page_internal" data-numposts="5"></div>
+
+
+					<div>
+						<a href="https://www.google.com/maps/place/La+Ficha+Wings/@20.5865179,-100.377815,17z/data=!3m1!4b1!4m5!3m4!1s0x85d344cbaf90b793:0x2b3e2705a463b604!8m2!3d20.5865179!4d-100.3756263">
+				    <div id="imgubi"></div>
+				    	</a>
+				    <button id="request">VER MAS INFORMACION</button>
+				    <div id="bio"></div>
+					</div>
+
+
+					<script>
+						var btn = document.getElementById('request');
+						var bio = document.getElementById('bio');
+						 
+						var request = new XMLHttpRequest();
+						 
+						request.onreadystatechange = function() {
+						  if(request.readyState === 4) {
+						    bio.style.border = '1px solid #e8e8e8';
+						    if(request.status === 200) { 
+						      bio.innerHTML = request.responseText;
+						    } else {
+						      bio.innerHTML = 'An error occurred during your request: ' +  request.status + ' ' + request.statusText;
+						    } 
+						  }
+						}
+						 
+						request.open('Get', 'Bio2.txt');
+						 
+						btn.addEventListener('click', function() {
+						  this.style.display = 'none';
+						  request.send();
+						});
+					</script>
+
+
+
+
+
+		</div>
+
+
+
+	
+		<p id="what">Que chinagdos es esto ?</p>
+
+		<footer>
+			<p>All rights reserved. ®</p>
+
+		</footer>
+	</div>
+
+<script src="../js/sidebar.js"></script>
+</body>
+</html>
